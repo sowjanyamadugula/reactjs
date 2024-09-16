@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Img from '../Assets/grouppets.jpg'
+import '../App.css'
 
 
 function Nav() {
