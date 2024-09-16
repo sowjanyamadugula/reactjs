@@ -1,19 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Img from '../Assets/grouppets.jpg'
 
-import { Link } from 'react-router-dom'
+
 function Nav() {
   return (
     <div className='nav'>
-    
-        <ul>
-            <Link to='/home'><li>Home</li></Link>
-            <Link to='/About'><li>About</li></Link>
-            <Link to='/Servies'><li>Servies</li></Link>
-            <Link to='/Pharmacy'><li>Pharmacy</li></Link>
-        </ul>
-        <Link to='/'> <p>Logout</p></Link>
+       <p>Hello</p>
+      <img src={Img} alt='grouppets'className='img' Style={{width:'100px'}}/>
+      <ul>
+        <li><Link to='/home'>Home</Link></li>
+        <li><Link to='/About'>About</Link></li>
+        <li><Link to='/Services'>Services</Link></li>
+        <li><Link to='/Pharmacy'>Pharmacy</Link></li>
+      </ul>
+      <div className='logout'>
+        <Link to='/'>Logout</Link>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Nav
+export default Nav;
