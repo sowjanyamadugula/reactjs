@@ -84,7 +84,7 @@ function Home() {
             </section>
             <section>
                 <h1 className="Happiness">Happiness Guarantee</h1>
-                <div className="container">
+                <div className="container main">
                     <div className="main-content">
                         {/* Left side with features */}
                         <div className="features-left">
