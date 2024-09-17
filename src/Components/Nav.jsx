@@ -7,12 +7,12 @@ import '../App.css'
 function Nav() {
   return (
     <div className='nav'>
-       <p>Hello</p>
+       <p className='para'>Hello</p>
       <img src={Img} alt='grouppets'className='img' Style={{width:'100px'}}/>
       <ul>
         <li><Link to='/home'>Home</Link></li>
         <li><Link to='/About'>About</Link></li>
-        <li><Link to='/Services'>Services</Link></li>
+        <li><Link to='/Services'> Pet Services</Link></li>
         <li><Link to='/Pharmacy'>Pharmacy</Link></li>
       </ul>
       <div className='logout'>

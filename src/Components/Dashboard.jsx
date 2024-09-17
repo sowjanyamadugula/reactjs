@@ -14,7 +14,7 @@ function Dashboard() {
           <Nav />
         </Col>
         <Col sm={10} style={{padding:'5%'}}>
-          <div className="dash maindata">
+          <div className="dash">
               {/* {
                NewData.map((e)=>{
                 return(
