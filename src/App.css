@@ -105,7 +105,7 @@
   position: relative;
   margin-right: 30px;
   margin-top: 10px;
-  background-color: antiquewhite;
+  background-color: hotpink;
   box-shadow: rgb(57, 111, 113) 0px 2px 8px 0px;
   box-shadow: inset olive;
 }
@@ -197,7 +197,7 @@
 
 
 .d1 {
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: rotateIn 2s ease-in-out forwards;
 }
 
 .d2 {
@@ -364,7 +364,7 @@ margin-left: 1%;
 
 .card .icon {
   font-size: 2rem;
-  color: #4CAF50; /* Customize icon color */
+  color: #4CAF50;
   margin-bottom: 10px;
 }
 
@@ -408,17 +408,107 @@ margin-left: 1%;
 
 .icon {
   margin-right: 8px;
-  font-size: 24px; /* Adjust size as needed */
+  font-size: 24px;
 }
 
 .title {
-  font-size: 18px; /* Adjust size as needed */
+  font-size: 18px;
   margin: 0;
 }
 
 .description {
   margin-top: 8px;
-  font-size: 14px; /* Adjust size as needed */
+  font-size: 14px;
   color: #555;
 }
+/* breads*/
 
+.breads img{
+  height: 200px;
+  width: 100%;
+  margin-top: 5%;
+}
+.maindata{
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  background-image: url('./Assets/backgroundpaw.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.maindata1{
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+/*Dogsbread*/
+ .breed-heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+  font-family: rumraisin ;
+  
+}
+/* Animation when the images load */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animation class for images */
+.image-animate {
+  animation: zoomIn 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  width: 100%; /* adjust based on layout */
+  max-width: 200px; /* adjust size based on your preference */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Hover effect for images */
+.image-animate:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.breed-item{
+  margin-top: 5%;
+  margin-left: 4%;
+  font-family: rumraisin ;
+}
+.breed-item1{
+  margin-top: 2%;
+  margin-left: 3%;
+  font-family: rumraisin ;
+}
+.breadname{
+  color: white;
+  font-size: large;
+  margin-left: 7%;
+  margin-top: 5%;
+  font-family: serif;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+.names{
+  margin-left: 5%;
+  
+}
+.img-id-name{
+  display: flex;
+  margin-top: 5%;
+  margin-left: 20%;
+  font-family: monospace;
+  font-weight: 30px;
+  font-size: bold;
+  
+}
+.viewmore{
+  margin-top: 270%;
+  
+}

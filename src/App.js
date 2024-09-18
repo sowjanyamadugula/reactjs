@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Dashboard from './Components/Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home';
+import Dogbreads from './pages/Dogbreads';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/nav" element={<Nav/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/home" element={<Home/>}/>
+          <Route path='/breads' element={<Dogbreads />} />
         </Routes>
       </BrowserRouter>
     
