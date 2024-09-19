@@ -7,6 +7,8 @@ import Dashboard from './Components/Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home';
 import Dogbreads from './pages/Dogbreads';
+import Petservices from './Components/Petservices.jsx';
+import ServiceCard from './pages/Dogservicescard.jsx';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/home" element={<Home/>}/>
           <Route path='/breads' element={<Dogbreads />} />
+          <Route path='/petservices' element={<Petservices/>}/>
+          <Route path='/dogservicescard' element={<ServiceCard/>}/>
         </Routes>
       </BrowserRouter>
     

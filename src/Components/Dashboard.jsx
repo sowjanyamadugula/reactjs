@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './Nav';
+ 
 import { Col, Row } from 'react-bootstrap';
 import { breads } from '../Data/Breads';
 import { Link } from 'react-router-dom';
@@ -17,6 +18,31 @@ function Dashboard() {
           <div className="dash">
             <p className='hello'>Hello, welcome to pets home</p>
           </div>
+          <div className='containerpetservices'>
+        <div className='rowicons'>
+          <div className='col-sm-2 itemicons'>
+           
+            <p>Pet Training At Home</p>
+          </div>
+          <div className='col-sm-2 itemicons'>
+            
+            <p>Pet Walking</p>
+          </div>
+          <div className='col-sm-2 itemicons'>
+           
+            <p>Pet Grooming</p>
+          </div>
+          <div className='col-sm-2 itemicons'>
+            
+            <p>Pet Boarding</p>
+          </div>
+          <div className='col-sm-2 itemicons'>
+           
+            <p>Pet Sitting</p>
+          </div>
+          </div>
+          
+        </div>
           <h2 className='breed-heading'>Types of Dog Breeds</h2>
           <div className='maindata1'>
             {

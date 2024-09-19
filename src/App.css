@@ -105,7 +105,7 @@
   position: relative;
   margin-right: 30px;
   margin-top: 10px;
-  background-color: hotpink;
+  
   box-shadow: rgb(57, 111, 113) 0px 2px 8px 0px;
   box-shadow: inset olive;
 }
@@ -281,6 +281,8 @@
   background-image: url('./Assets/dogpaw.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  overflow: hidden;
 }
 .grid-container > div {
   background-color: rgb(58, 65, 65);
@@ -289,7 +291,12 @@
   padding-bottom: 30px;
   font-size: 20px;
   color:whitesmoke;
-  box-shadow:   10px 10px 5px lightblue ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s; 
+  border: 2px solid #0f94e6; 
+  border-radius: 6px; 
+  width: 100%;
+  position: sticky;
 }
 
 .h1{
@@ -393,6 +400,7 @@ margin-left: 1%;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
+  
 }
 
 .card-content {
@@ -511,4 +519,118 @@ margin-left: 1%;
 .viewmore{
   margin-top: 270%;
   
+}
+/*petservices*/
+.headerpet {
+  text-align: center;
+  color: #1f7477;
+  margin-bottom: 20px;
+  
+  margin-top: 3%;
+}
+
+.containerimg {
+  display: flex;
+  justify-content: center;
+}
+
+.rowicons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.i1
+{
+  font-size: larger;
+}
+
+.itemicons {
+  border: 1px solid #a8dadc; 
+  border-radius: 8px; 
+  padding: 10px;
+  text-align: center; 
+  margin: 3px; 
+  flex: 1 0 70px; 
+  padding-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s; 
+  margin-left: 2%;
+  
+}
+
+.itemicons:hover {
+  transform: scale(1.05); 
+}
+.dogservies{
+  font-size: 2rem;
+  color: #1f7477;
+  text-align: center;
+  margin-top: 3%;
+}
+.items2{
+  margin-top: 3%;
+}
+.rowser{
+  display: flex;
+  gap: 20px;
+}
+.hearser
+{
+  margin-top: 5%;
+  font-family: cursive;
+  font-size: larger;
+  margin-left: 15%;
+}
+.headdogserv{
+margin-left: 40%;
+color: #1f7477;
+font-family: monospace;
+margin-top: 3%;
+}
+/*Dog services content*/
+/* App.css */
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  
+}
+
+.service-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-price {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.service-price .original-price {
+  text-decoration: line-through;
+  color: red;
+  margin-right: 10px;
+}
+
+.feature-list {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.book-button {
+  background-color: orange;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
 }
