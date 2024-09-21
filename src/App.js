@@ -8,7 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home';
 import Dogbreads from './pages/Dogbreads';
 import Petservices from './Components/Petservices.jsx';
-import ServiceCard from './pages/Dogservicescard.jsx';
+
+import Petfood from './Components/Petfood.jsx';
+import Petmedicans from './Components/Petmedicans.jsx';
+
+
 
 
 function App() {
@@ -23,7 +27,12 @@ function App() {
           <Route path="/home" element={<Home/>}/>
           <Route path='/breads' element={<Dogbreads />} />
           <Route path='/petservices' element={<Petservices/>}/>
-          <Route path='/dogservicescard' element={<ServiceCard/>}/>
+         
+          <Route path='/petfood' element={<Petfood/>}/>
+          <Route path='/petmedican' element={<Petmedicans/>}/>
+          
+       
+          
         </Routes>
       </BrowserRouter>
     

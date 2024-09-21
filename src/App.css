@@ -132,7 +132,10 @@
   margin: 0 auto;
  padding-top: 0;
 }
-
+.price1 {
+  color: #FF5733; /* Adjust color as per your design */
+  font-weight: bold;
+}
 
 
 .gallery-img {
@@ -157,6 +160,134 @@
 .row{
   padding-top: 0;
 }
+
+/*typed dog bbreeds dashboard*/
+/* Dogbreads Component Styles */
+.bread1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+/* Individual card style for Dogbreads */
+.breed2 {
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, pink, #ff00cc) 1;
+  padding: 10px;
+  width: 22%; /* Further reduced size */
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Clearer, larger box shadow */
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff; /* Clean background color */
+  border-radius: 10px; /* Add slight rounding for a modern look */
+}
+
+/* Hover effect with twinkle border for Dogbreads */
+.breed2:hover {
+  transform: scale(1.05); /* Slightly larger on hover */
+  animation: twinkle-border 1.5s infinite alternate;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25); /* Larger shadow on hover */
+}
+
+/* Flex layout for images */
+.breed2 img {
+  width: 100px; /* Adjust image size to fit smaller cards */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Text styling for Dogbreads */
+.breed2 p {
+  font-size: 14px; /* Slightly smaller text */
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Dashboard Component Styles */
+.breed3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+/* Individual card style for Dashboard */
+.breed {
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, pink, #ff00cc) 1;
+  padding: 10px;
+  width: 22%; /* Reduced size for Dashboard */
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Clearer, larger box shadow */
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Hover effect for Dashboard cards */
+.breed:hover {
+  transform: scale(1.05); /* Slightly larger on hover */
+  animation: twinkle-border 1.5s infinite alternate;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25); /* Larger shadow on hover */
+}
+
+/* Flex layout for images in Dashboard */
+.breed img {
+  width: 100px; /* Adjust image size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Add to Cart button styling */
+.add-to-cart2 {
+  padding: 8px 16px;
+  background-color: #ff00cc;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for Add to Cart button */
+.add-to-cart2:hover {
+  background-color: pink;
+}
+
+/* View More button styling */
+.viewmore {
+  font-size: 18px;
+  color: #ff00cc;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for View More */
+.viewmore:hover {
+  color: pink;
+}
+
+/* Twinkle border animation */
+@keyframes twinkle-border {
+  0% {
+    border-image: linear-gradient(45deg, pink, #ff00cc) 1;
+  }
+  100% {
+    border-image: linear-gradient(45deg, #ff00cc, pink) 1;
+  }
+}
+
+
+
+/* typed dog bbreeds dashboards*/
+
 /*home page*/
 
 
@@ -470,56 +601,25 @@ margin-left: 1%;
   }
 }
 
-/* Animation class for images */
-.image-animate {
-  animation: zoomIn 0.5s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  width: 100%; /* adjust based on layout */
-  max-width: 200px; /* adjust size based on your preference */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+
+.viewmore {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: rgb(24, 20, 20);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 250%;
 }
 
-/* Hover effect for images */
-.image-animate:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+.viewmore:hover {
+  background-color: #45a049;
 }
-.breed-item{
-  margin-top: 5%;
-  margin-left: 4%;
-  font-family: rumraisin ;
-}
-.breed-item1{
-  margin-top: 2%;
-  margin-left: 3%;
-  font-family: rumraisin ;
-}
-.breadname{
-  color: white;
-  font-size: large;
-  margin-left: 7%;
-  margin-top: 5%;
-  font-family: serif;
-  text-decoration: none;
-  text-decoration-line: none;
-}
-.names{
-  margin-left: 5%;
   
-}
-.img-id-name{
-  display: flex;
-  margin-top: 5%;
-  margin-left: 20%;
-  font-family: monospace;
-  font-weight: 30px;
-  font-size: bold;
-  
-}
-.viewmore{
-  margin-top: 270%;
-  
-}
+
 /*petservices*/
 .headerpet {
   text-align: center;
@@ -634,3 +734,107 @@ margin-top: 3%;
   cursor: pointer;
   margin-top: 10px;
 }
+/*dog food services*/
+.food-heading{
+
+  margin-top: 5%;
+  margin-bottom: 2%;
+  border:1px solid #1f7477;
+ padding-top: 10px;
+ padding-bottom: 10px;
+  padding-right: 10px;
+  width: 100%;
+  text-align: center;
+  color: purple;
+}
+.pf{
+  overflow: hidden;
+}
+.foodbrand {
+  display: flex;
+  flex-direction: column; /* Ensures items stack vertically */
+  align-items: center;    /* Aligns content in the center (optional) */
+}
+
+
+
+ .dogfoodbrands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.food-item1, .foodbrand {
+  width: 23%;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-item1:hover, .foodbrand:hover {
+  transform: translateY(-10px);
+}
+
+.image-animate, .image-animate1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.names, .foodname {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+.d-block
+{
+height: 430px;
+width: 40%;
+}
+.carousel-inner
+{
+  margin-top: 3%;
+}
+.dogbreeds{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+/*pets medicans*/
+/* Container for all medication cards */
+.petmed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+/* Individual card style */
+
+

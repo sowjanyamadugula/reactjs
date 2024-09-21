@@ -4,23 +4,32 @@ import { Link } from 'react-router-dom';
 
 function Dogbreads() {
   return (
-   
-    <div className='maindata'>
-      
-      {
-        breads.map((e) => {
-          return (
-            <div className='breed-item' key={e.id}>
-              <Link to={`/breads/${e.id}`}>
-                <img className='image-animate' src={e.image} alt={e.name} />
-                <p className='breadname'>Breed name: {e.name}</p>
-              </Link>
-            </div>
-          );
-        })
-      }
+  
+    <div className='bread1'>
+  
+        {
+            breads.map((e)=>{
+                return(
+                  
+                    <div className='breed2'>
+<h2 className='food-heading'>Types of Dog Breeds</h2>
+                    <Link to={`/breads/${e.id}`}> </Link>
+                   <img src={e.image} alt="" />
+                        
+                        <p>Brand Name:{e.name}</p>
+                        <p>Price : {e.price}</p>
+                        <button className="add-to-cart2">Add to Cart</button>
+                   
+                    </div>
+                    
+                )
+                
+            })
+        }
     </div>
-  );
+  )
 }
+   
+   
 
 export default Dogbreads;
