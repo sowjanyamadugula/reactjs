@@ -4,9 +4,11 @@ import Nav from './Nav';
 import { Col, Row } from 'react-bootstrap';
 import { breads } from '../Data/Breads';
 import { Link } from 'react-router-dom';
+import { catbreeds } from '../Data/Catbreedsdata';
 
 function Dashboard() {
   const NewData = breads.slice(0,3);
+  const NewData1=catbreeds.slice(0,3);
 
   return (
     <div className='container-fluid'>
@@ -44,7 +46,7 @@ function Dashboard() {
           
         </div>
        
-        <h2 className='food-heading'>Types of Parrot Food</h2>
+        <h2 className='food-heading'>Types of Dog Breeds</h2>
        
         <div className="breed3">
           {NewData.map((e) => (
@@ -53,6 +55,24 @@ function Dashboard() {
               <p>Brand Name: {e.name}</p>
               <p>Price: ${e.price}</p>
               <button className="add-to-cart2">Add to Cart</button>
+            </div>
+
+          ))}
+           <Link to='/breads'>
+<p className='viewmore'> View more</p>
+</Link>
+          
+        </div>
+
+        <h2 className='catbreed1'>Types of Cat Breeds</h2>
+       
+        <div className="catbreed3">
+          {NewData1.map((e) => (
+            <div className='catbreed' key={e.id}>
+              <img src={e.image} alt={e.name} />
+              <p>Brand Name: {e.name}</p>
+              <p>Price: ${e.price}</p>
+              <button className="add-to-cart3">Add to Cart</button>
             </div>
 
           ))}

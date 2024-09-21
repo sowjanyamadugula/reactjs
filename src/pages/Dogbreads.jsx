@@ -12,7 +12,7 @@ function Dogbreads() {
                 return(
                   
                     <div className='breed2'>
-<h2 className='food-heading'>Types of Dog Breeds</h2>
+
                     <Link to={`/breads/${e.id}`}> </Link>
                    <img src={e.image} alt="" />
                         
