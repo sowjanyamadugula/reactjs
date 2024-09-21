@@ -286,66 +286,75 @@
 }
 
 /*cat breed */
+/* Container for the card layout */
 .catbread1 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping to new lines */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
 }
 
+/* Individual card styles */
 .catbreed2 {
-  width: 250px;
-  border: 2px solid;
-  border-image: linear-gradient(45deg, #ff0099, #493240) 1;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease-in-out;
-  background-color: #fff;
-  animation: twinkle 2s infinite;
+  width: 250px; /* Fixed width for each card */
+  border: 2px solid; /* Solid border */
+  border-image: linear-gradient(45deg, #ff0099, #493240) 1; /* Gradient border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+  background-color: #fff; /* White background */
+  animation: twinkle 2s infinite; /* Twinkle animation */
 }
 
+/* Hover effect for cards */
 .catbreed2:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
 }
 
+/* Image styling */
 .catbreed2 img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Match card corners */
 }
 
+/* Paragraph styles */
 .catbreed2 p {
-  margin: 10px 0;
-  font-size: 16px;
-  text-align: center;
+  margin: 10px 0; /* Margin around paragraphs */
+  font-size: 16px; /* Font size */
+  text-align: center; /* Centered text */
 }
 
+/* Add to Cart button styles */
 .add-to-cart2 {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #ff0099;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  display: block; /* Block level button */
+  width: 100%; /* Full width */
+  padding: 10px; /* Button padding */
+  margin-top: 10px; /* Margin above the button */
+  background-color: #ff0099; /* Button background */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded button */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease-in-out; /* Smooth background transition */
 }
 
+/* Hover effect for button */
 .add-to-cart2:hover {
-  background-color: #493240;
+  background-color: #493240; /* Darker color on hover */
 }
 
+/* View more link styling */
 .viewmore {
-  text-align: center;
-  color: #ff0099;
-  margin-top: 20px;
-  cursor: pointer;
+  text-align: center; /* Centered text */
+  color: #ff0099; /* Link color */
+  margin-top: 20px; /* Margin above link */
+  cursor: pointer; /* Pointer cursor */
 }
 
+/* Twinkle animation keyframes */
 @keyframes twinkle {
   0% { border-color: #ff0099; }
   50% { border-color: #493240; }
