@@ -15,37 +15,30 @@ function Petmedicans() {
           <h1>Pets Health Care Pharmacy</h1>
         </header>
   
-        <div className="container">
-          <h2>Carousel Example</h2>
-          <div id="myCarousel" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-  
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img src={Care} alt="Care Image 1" style={{ width: '100%' }} />
-              </div>
-              <div className="carousel-item">
-                <img src={Care1} alt="Care Image 2" style={{ width: '100%' }} />
-              </div>
-              <div className="carousel-item">
-                <img src={Care} alt="Care Image 3" style={{ width: '100%' }} />
-              </div>
-            </div>
-  
-            <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="sr-only">Next</span>
-            </a>
+        <div id="demo" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={Care} alt="Los Angeles" className="d-block" style={{ width: '100%' }} />
+          </div>
+          <div className="carousel-item">
+            <img src={Care1} alt="Chicago" className="d-block" style={{ width: '100%' }} />
+          </div>
+          <div className="carousel-item">
+            <img src={Care} alt="New York" className="d-block" style={{ width: '100%' }} />
           </div>
         </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon"></span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span className="carousel-control-next-icon"></span>
+        </button>
+      </div>
   
         <div className="petmedicandata">
           {Petmedican.map((e) => (

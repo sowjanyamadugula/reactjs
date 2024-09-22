@@ -7,6 +7,9 @@ import Cat from '../Assets/cats.jpg'
 import Rabbit from '../Assets/rabbit.png'
 import Pig from '../Assets/pig.png'
 import Fish from '../Assets/fish.png';
+import { catdogservices  } from '../Data/serivicesdata';
+import { cdservice } from '../Data/Catservicesdata';
+
 
 const Card = ({ title, icon, description }) => {
   return (
@@ -22,7 +25,13 @@ const Card = ({ title, icon, description }) => {
   );
 };
 
-function Dogservices() {
+function Dogservices()
+
+{
+
+  const Petsdata=catdogservices.slice(0,3);
+  const Petsdata1=cdservice.slice(0,3);
+
   return (
     <div>
       <h1 className='headerpet'>Pet Services</h1>
@@ -77,6 +86,48 @@ function Dogservices() {
       </div>
       </section>
       <section>
+      <h2 className='petserhead'>Types of Services</h2>
+       
+       <div className="petservicesss3">
+         {Petsdata.map((e) => (
+           <div className='petservicesss' key={e.id}>
+             <img src={e.image} alt={e.name}  />
+             <p>Title:{e.title}</p>
+                    <p>originalPrice:{e.originalPrice}</p>
+                    <p>discountedPrice{e.discountedPrice}</p>
+                    <p>features:{e.features}</p>
+             <button className="add-to-cart2">Add to Cart</button>
+           </div>
+
+         ))}
+          
+       </div>
+       <h2 className='petserhead'>Types of Services</h2>
+       
+       <div className="petservicesss3">
+         {Petsdata1.map((e) => (
+           <div className='petservicesss' key={e.id}>
+             <img src={e.image} alt={e.name}  />
+             <p>Title:{e.title}</p>
+                    <p>originalPrice:{e.originalPrice}</p>
+                    <p>discountedPrice{e.discountedPrice}</p>
+                    <p>features:{e.features}</p>
+             <button className="add-to-cart2">Add to Cart</button>
+           </div>
+
+         ))}
+          
+       </div>
+
+
+
+
+
+
+
+      </section>
+
+<section>
       <div>
         
         

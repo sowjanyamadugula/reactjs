@@ -11,6 +11,10 @@ import Petservices from './Components/Petservices.jsx';
 
 import Petfood from './Components/Petfood.jsx';
 import Petmedicans from './Components/Petmedicans.jsx';
+import Catbreed from './pages/Catbreed.jsx';
+import Parrotbreed from './pages/Parrotbreed.jsx';
+import Catser from './pages/Catser.jsx';
+
 
 
 
@@ -30,6 +34,10 @@ function App() {
          
           <Route path='/petfood' element={<Petfood/>}/>
           <Route path='/petmedican' element={<Petmedicans/>}/>
+          <Route path='/catbreeds' element={<Catbreed/>}/>
+       <Route path='/parrotbreeds' element={<Parrotbreed/>}/>
+       <Route path='/catser' element={<Catser/>}/>
+          
           
        
           

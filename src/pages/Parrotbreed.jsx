@@ -1,21 +1,20 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom';
-import { catbreeds } from '../Data/Catbreedsdata';
 import '../App.css';
+import { parrotbreeds } from '../Data/Parraotdata';
 
-function Catbreed() {
+function parrotbreed() {
     return (
     
       <div className='bread1'>
     
           {
-              catbreeds.map((e)=>{
+              parrotbreeds.map((e)=>{
                   return(
                     
                       <div className='breed2'>
   
-                      <Link to={`/catbreads/${e.id}`}> </Link>
+                      <Link to={`/parrotbreads/${e.id}`}> </Link>
                      <img src={e.image} alt="" />
                           
                           <p>Brand Name:{e.name}</p>
@@ -32,4 +31,4 @@ function Catbreed() {
     )
   }
 
-export default Catbreed
+export default parrotbreed
