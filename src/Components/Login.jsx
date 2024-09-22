@@ -16,7 +16,8 @@ function Login() {
           <input type="password" className="form-control" id="exampleInputPassword1" />
         </div>
         
-       <Link to='/dashboard'>
+       <Link to='/home
+       '>
         <button type="submit" className="btn btn-success me-2">Login</button>
         </Link>
         <br />

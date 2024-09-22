@@ -8,6 +8,8 @@ import Petfood3 from '../Assets/petfood.png';
 import Petfood1 from '../Assets/petfood1.png'
 import { catfoodbrands } from '../Data/Catfoods';
 import { parrotfoodbrand } from '../Data/Parratfood';
+import Nav from './Nav';
+import { Col, Row } from 'react-bootstrap';
 
 function Petfood() {
   const FoodData = foodbrands.slice(0, 12);
@@ -15,6 +17,12 @@ function Petfood() {
   const FoodDataparrot = parrotfoodbrand.slice(0, 4);
 
   return (
+    <div className='container-fluid'>
+    <Row>
+      <Col sm={2}>
+        <Nav />
+      </Col>
+      <Col sm={10}>
     <div className='pf'>
       <h1 className='headerpet'>Pet Foods</h1>
       <div className='containerpetservices'>
@@ -107,6 +115,9 @@ function Petfood() {
           </div>
         ))}
       </div>
+    </div>
+    </Col>
+      </Row>
     </div>
   );
 }

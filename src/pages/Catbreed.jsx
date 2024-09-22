@@ -15,11 +15,11 @@ function Catbreed() {
                     
                       <div className='breed2'>
   
-                      <Link to={`/catbreads/${e.id}`}> </Link>
+                      <Link to={`/catbreeds/catbre/${e.id}`}>
                      <img src={e.image} alt="" />
                           
                           <p>Brand Name:{e.name}</p>
-                          <p>Price : {e.price}</p>
+                          <p>Price : {e.price}</p> </Link>
                           <button className="add-to-cart2">Add to Cart</button>
                      
                       </div>
@@ -32,4 +32,4 @@ function Catbreed() {
     )
   }
 
-export default Catbreed
+export default Catbreed;

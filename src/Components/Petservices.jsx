@@ -9,6 +9,8 @@ import Pig from '../Assets/pig.png'
 import Fish from '../Assets/fish.png';
 import { catdogservices  } from '../Data/serivicesdata';
 import { cdservice } from '../Data/Catservicesdata';
+import Nav from './Nav';
+import { Col, Row } from 'react-bootstrap';
 
 
 const Card = ({ title, icon, description }) => {
@@ -33,6 +35,12 @@ function Dogservices()
   const Petsdata1=cdservice.slice(0,3);
 
   return (
+    <div className='container-fluid'>
+    <Row>
+      <Col sm={2}>
+        <Nav />
+      </Col>
+      <Col sm={10}>
     <div>
       <h1 className='headerpet'>Pet Services</h1>
       <div className='containerpetservices'>
@@ -195,6 +203,10 @@ function Dogservices()
         
       </div>
       </section>
+      
+    </div>
+    </Col>
+      </Row>
     </div>
   );
 }

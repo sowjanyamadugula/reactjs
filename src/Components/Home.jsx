@@ -1,6 +1,7 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.css';
-
+import Nav from './Nav';
+import { Col, Row } from 'react-bootstrap';
 import '../App.css';
 import Dogtrain from '../Assets/dog-training.png';
 import Dogwalk from '../Assets/dog-walking.png';
@@ -28,9 +29,15 @@ const Card = ({ title, icon, description }) => {
 
 function Home() {
     return (
+        <div className='container-fluid'>
+      <Row>
+        <Col sm={2}>
+          <Nav />
+        </Col>
+        <Col sm={10}>
         <div>
             <section className='background'>
-                <div className="grid-container head">
+                {/* <div className="grid-container head">
                     <div className="item1">
                         <div className='cointainer row'>
                             <div className='col-sm-2'><p>pets services</p></div>
@@ -41,7 +48,7 @@ function Home() {
                             <div className='col-sm-2'><p>Become a Pet Master</p></div>
                         </div> 
                     </div>
-                </div>
+                </div> */}
 
                 <div className='background'>
                     <p className='h1'>Top-notch Pet Services at Competitive Prices</p>
@@ -51,11 +58,11 @@ function Home() {
                                 <div className='hellodogs'>
                                     <div className='col-sm-2'>
                                         <img src={Dogtrain} className='d1' alt="dogtrain" />
-                                        <h6 className='dogh6'>Dog Training</h6>
+                                        <h6 className='dogh6'>Training</h6>
                                     </div>
                                     <div className='col-sm-2'>
                                         <img src={Dogwalk} className='d2' alt="dogwalk" />
-                                        <h6 className='dogh6'>Dog Walking</h6>
+                                        <h6 className='dogh6'>Walking</h6>
                                     </div>
                                     <div className='col-sm-2'>
                                         <img src={Doggrom} className='d3' alt="doggrom" />
@@ -67,7 +74,7 @@ function Home() {
                                     </div>
                                     <div className='col-sm-2'>
                                         <img src={Dogsit} className='d5' alt="dogsit" />
-                                        <h6 className='dogh6'>Dog Sitting</h6>
+                                        <h6 className='dogh6'> Sitting</h6>
                                     </div>
                                     <div className='col-sm-2'>
                                         <img src={Dogvet} className='d6' alt="dogvet" />
@@ -142,6 +149,9 @@ function Home() {
                 </div>
             </section>
         </div>
+        </Col>
+        </Row>
+      </div>
     );
 }
 

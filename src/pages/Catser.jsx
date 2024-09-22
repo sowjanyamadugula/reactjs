@@ -31,4 +31,4 @@ function Catser() {
     </div>
     )
     }
-export default Catser
+export default Catser;

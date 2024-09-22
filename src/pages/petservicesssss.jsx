@@ -18,18 +18,13 @@ function petservicesssss() {
                     <p>originalPrice:{e.originalPrice}</p>
                     <p>discountedPrice{e.discountedPrice}</p>
                     <p>features:{e.features}</p>
-                    
-            
                     <button className="add-to-cart2">Add to Cart</button>
-               
-                </div>
-                
-            )
-            
+                </div>   
+            )  
         })
     }
 </div>
 )
 }
 
-export default petservicesssss
+export default petservicesssss;

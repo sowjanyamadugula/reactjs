@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
-import Fish from '../Assets/fish.png';
 import { Col, Row } from 'react-bootstrap';
+import Fish from '../Assets/fish.png';
 import { breads } from '../Data/Breads';
 import { Link } from 'react-router-dom';
 import { catbreeds } from '../Data/Catbreedsdata';

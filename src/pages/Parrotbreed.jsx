@@ -14,11 +14,11 @@ function parrotbreed() {
                     
                       <div className='breed2'>
   
-                      <Link to={`/parrotbreads/${e.id}`}> </Link>
+                      <Link to={`/parrotbreeds/parrotbre/${e.id}`}>
                      <img src={e.image} alt="" />
                           
                           <p>Brand Name:{e.name}</p>
-                          <p>Price : {e.price}</p>
+                          <p>Price : {e.price}</p> </Link>
                           <button className="add-to-cart2">Add to Cart</button>
                      
                       </div>
@@ -31,4 +31,4 @@ function parrotbreed() {
     )
   }
 
-export default parrotbreed
+export default parrotbreed;

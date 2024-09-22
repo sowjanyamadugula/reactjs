@@ -8,15 +8,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home';
 import Dogbreads from './pages/Dogbreads';
 import Petservices from './Components/Petservices.jsx';
-
 import Petfood from './Components/Petfood.jsx';
 import Petmedicans from './Components/Petmedicans.jsx';
 import Catbreed from './pages/Catbreed.jsx';
 import Parrotbreed from './pages/Parrotbreed.jsx';
 import Catser from './pages/Catser.jsx';
-
-
-
+import Details from './pages/Details.jsx';
 
 
 function App() {
@@ -38,7 +35,10 @@ function App() {
        <Route path='/parrotbreeds' element={<Parrotbreed/>}/>
        <Route path='/catser' element={<Catser/>}/>
           
-          
+        <Route path='/details' element={<Details/>}/>
+        <Route path='/breads/dogbre/id' element={<Details/>}/>
+        <Route path='/catbreeds/catbre/id' element={<Details/>}/>  
+        <Route path='/parrotbreeds/parrotbre/id' element={<Details/>}/>
        
           
         </Routes>

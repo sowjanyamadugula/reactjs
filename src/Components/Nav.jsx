@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faPaw, faShieldAlt, faCapsules } from '@fortawesome/free-solid-svg-icons'; // Import icons
+import { faHome, faPaw, faShieldAlt, faCapsules,faTableColumns } from '@fortawesome/free-solid-svg-icons'; // Import icons
 import Img from '../Assets/grouppets.jpg';
 import '../App.css';
 
@@ -16,6 +16,12 @@ function Nav() {
             <FontAwesomeIcon icon={faHome} /> Home
           </Link>
         </li>
+        <li className='l2'>
+          <Link to='/dashboard'>
+          <FontAwesomeIcon icon={faTableColumns}  /> Dashboard
+          </Link>
+        </li>
+        
         <li className='l2'>
           <Link to='/petservices'>
             <FontAwesomeIcon icon={faPaw} /> Pet Services

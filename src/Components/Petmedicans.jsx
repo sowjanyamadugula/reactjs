@@ -4,11 +4,21 @@ import '../App.css';
 import Care from '../Assets/care1.png';
 import Care1 from '../Assets/care2.jpg';
 import { medican } from '../Data/Medicansdata';
+import Nav from './Nav';
+import { Col, Row } from 'react-bootstrap';
+
 
 function Petmedicans() {
     const Petmedican = medican.slice(0, 12);
 
     return (
+      <div className='container-fluid'>
+      <Row>
+        <Col sm={2}>
+          <Nav />
+        </Col>
+        <Col sm={10}>
+      
       <div>
         <header className='logohead'>
           <img src={Pharmacylogo} alt="Pharmacy Logo" />
@@ -51,7 +61,10 @@ function Petmedicans() {
           ))}
         </div>
       </div>
+      </Col>
+      </Row>
+    </div>
     );
   }
 
-export default Petmedicans
+export default Petmedicans;

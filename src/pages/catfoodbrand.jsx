@@ -23,4 +23,4 @@ function catfoodbrand() {
   )
 }
 
-export default catfoodbrand
+export default catfoodbrand;

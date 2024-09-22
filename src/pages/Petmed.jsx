@@ -26,4 +26,4 @@ function petmed() {
   )
 }
 
-export default petmed
+export default petmed;

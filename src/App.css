@@ -34,7 +34,7 @@
 /* sidenav */
 .nav {
   height: 100vh;
-  width: 200px;
+  width: 250px;
   background-color: rgb(60, 60, 59);
   display: flex;
   flex-direction: column;
@@ -42,10 +42,10 @@
   box-sizing: border-box; 
   overflow: hidden;
   position: fixed;
- 
+  
 }
 .para{
-  margin-left:40px;
+  margin-left:50px;
   margin-top: 30%;
   color: whitesmoke;
   font-weight: bolder;
@@ -54,7 +54,7 @@
 }
 .nav ul {
   list-style: none;
-  margin-bottom: 50%;
+  margin-bottom: 20%;
 
 }
 
@@ -63,16 +63,16 @@
   padding: 5px;
 }
 .l1{
-  margin-left:20px;
+  margin-left:25px;
 }
 .l2{
-  margin-left:2px;
+  margin-left:7px;
 }
 .l3{
-  margin-left:5px;
+  margin-left:10px;
 }
 .l4{
-  margin-left:10px;
+  margin-left:5px;
 }
 
 .nav a {
@@ -92,7 +92,7 @@
 .img{
   height: 15%;
   clip-path: circle();
- margin-left: 40px;
+ margin-left: 45px;
 }
 
 /* dashboard*/
@@ -236,7 +236,7 @@
 
 /* Flex layout for images in Dashboard */
 .breed img {
-  width: 100px; /* Adjust image size */
+  width: 200px; /* Adjust image size */
   height: auto;
   margin-bottom: 10px;
 }
@@ -302,7 +302,7 @@
   flex-wrap: wrap; 
   padding: 10px;
   border: 5px solid #ccc; 
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -318,6 +318,7 @@
   text-align: center;
   padding: 10px;
   background-color:white;
+  gap: 5px;
 }
 .sidedog{
   margin-top: 5%;
@@ -421,7 +422,7 @@
   overflow: hidden;
 }
 .grid-container > div {
-  background-color: rgb(58, 65, 65);
+  /* background-color: rgb(58, 65, 65); */
   text-align: center;
   padding: 20px 0;
   padding-bottom: 30px;
@@ -458,6 +459,7 @@
   color: rgb(34, 29, 29); 
   margin-top: 10%;
   font-family: Cursive; 
+  margin-left: 25px;
 }
 .sidedog{
 margin-left: 1%;
