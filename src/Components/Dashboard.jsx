@@ -63,7 +63,7 @@ function Dashboard() {
           </div>
           
         </div>
-       
+        <div  className='secdash'>
         <h2 className='food-heading'>Types of Dog Breeds</h2>
        
         <div className="breed3">
@@ -79,7 +79,7 @@ function Dashboard() {
            <Link to='/breads'>
 <p className='viewmore'> View more</p>
 </Link>
-          
+          </div>
         </div>
 <div  className='secdash'>
         <h2 className='catbreed1'>Types of Cat Breeds</h2>
@@ -119,12 +119,16 @@ function Dashboard() {
          
        </div>
         </div>
+       
         <section >
-      <div className='secdash'>
-              <h1 className="Happiness">Happiness Guarantee</h1>
+        
+      <div>
+      <h1 className="Happiness">Happiness Guarantee</h1>   
                 <div className="container main">
+                  
                     <div className="main-content">
                         {/* Left side with features */}
+                        
                         <div className="features-left">
                             <Card
                                 title="Secure Payment"

@@ -467,6 +467,8 @@ margin-left: 1%;
   margin-left: 40%;
   margin-top: 10%;
   font-family: rumraisin;
+  color: #333;
+  
 }
 .grid-container three{
   background-color: white;
@@ -481,6 +483,7 @@ margin-left: 1%;
   text-align: center;
   padding: 20px;
   margin-bottom: 5%;
+  
 }
 
 .header {
@@ -492,7 +495,8 @@ margin-left: 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  /* background-image: url('./Assets/backgrounddash.jpeg'); */
+} 
 
 .features-left, .features-right {
   display: grid;
