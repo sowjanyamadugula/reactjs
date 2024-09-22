@@ -22,13 +22,13 @@ function Nav() {
           </Link>
         </li>
         <li className='l3'>
-          <Link to='/vetinsurance'>
-            <FontAwesomeIcon icon={faShieldAlt} /> Vet Insurance
+          <Link to='/petfood'>
+            <FontAwesomeIcon icon={faShieldAlt} />Pets Food
           </Link>
         </li>
         <li className='l4'>
-          <Link to='/Pharmacy'>
-            <FontAwesomeIcon icon={faCapsules} /> Pharmacy
+          <Link to='/petmedican'>
+            <FontAwesomeIcon icon={faCapsules} /> Pets Medicans
           </Link>
         </li>
       </ul>
