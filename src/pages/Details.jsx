@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import { breads } from '../Data/Breads';
 import { catbreeds } from '../Data/Catbreedsdata';
 import { parrotbreeds } from '../Data/Parraotdata';
-import { CartContext } from '../Single/CartContext'; // Ensure this context is set up correctly
+import { CartContext } from '../Single/CartContext'; 
+
 
 const Data1 = {
     breeddog: breads,

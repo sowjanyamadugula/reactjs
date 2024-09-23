@@ -15,6 +15,7 @@ import Parrotbreed from './pages/Parrotbreed.jsx';
 import Catser from './pages/Catser.jsx';
 import Details from './pages/Details.jsx';
 import { CartProvider } from './Single/CartContext';
+import Cart from './Single/Card.jsx';
 
 function App() {
   return (
@@ -44,14 +45,16 @@ function App() {
     <Route path="/dogfoods/dogfood/:id" element={<Details />} />
     <Route path="/medican/:id" element={<Details />} />
     <Route path="/services/:id" element={<Details />} />
+    <Route path="/addtocard" element={<Cart />} />
        
          <Route path="/:type/:id" element={<Details />} />
-         
+         <CartProvider/>
           
         </Routes>
       </BrowserRouter>
     
     </div>
+    
   );
 }
 
