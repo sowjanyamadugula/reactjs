@@ -11,7 +11,7 @@ function Catbreed() {
               catbreeds.map((e)=>{
                   return(                  
                       <div className='breed2'>
-    <Link to={`/catbreeds/cat/${e.id}`}>
+    <Link to={`/details/cat/${e.id}`}>
                      <img src={e.image} alt="" />
                            <p>Brand Name:{e.name}</p>
                           <p>Price : {e.price}</p> 

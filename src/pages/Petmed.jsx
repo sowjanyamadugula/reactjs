@@ -10,7 +10,7 @@ function petmed() {
                 return(
                     
                     <div className='petmed1'>
-                    <Link to={`/medican/${e.id}`}>
+                    <Link to={`/details/${e.id}`}>
                         <img src={e.image} alt="" />
                         
                         <p>Brand Name:{e.name}</p>

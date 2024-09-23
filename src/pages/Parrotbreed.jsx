@@ -11,7 +11,7 @@ function Parrotbreed() {
               parrotbreeds.map((e) => {
                   return (
                       <div className='breed2'>
-                          <Link to={`/parrotbreeds/parrot/${e.id}`}>
+                          <Link to={`/details/parrot/${e.id}`}>
                               <img src={e.image} alt="" />
                               <p>Brand Name: {e.name}</p>
                               <p>Price : {e.price}</p>

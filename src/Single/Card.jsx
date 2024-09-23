@@ -1,9 +1,9 @@
+// src/Single/Cart.jsx
 import React, { useContext } from 'react';
-import { CartContext } from '../Single/CartContext';
-
+import { CartContext } from './CartContext'; // Adjust the import based on your structure
 
 function Cart() {
-    const { cartItems, removeFromCart } = useContext(CartContext);
+    const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, totalAmount } = useContext(CartContext);
 
     return (
         <div>
@@ -15,12 +15,16 @@ function Cart() {
                     {cartItems.map((item) => (
                         <li key={item.id}>
                             <img src={item.image} alt={item.name} />
-                            <p>{item.name} - Price: {item.price}</p>
+                            <p>{item.name} - Price: ${item.price} x {item.quantity}</p>
+                            <button onClick={() => increaseQuantity(item.id)}>+</button>
+                            <button onClick={() => decreaseQuantity(item.id)}>-</button>
                             <button onClick={() => removeFromCart(item.id)}>Remove</button>
                         </li>
                     ))}
                 </ul>
             )}
+            <h3>Total Amount: ${totalAmount()}</h3>
+            <button onClick={() => alert('Order placed!')}>Place Order</button>
         </div>
     );
 }

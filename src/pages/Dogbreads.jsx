@@ -13,7 +13,7 @@ function Dogbreads() {
                   
                     <div className='breed2'>
 
-                    <Link to={`/breads/dog/${e.id}`}>
+                    <Link to={`/details/dog/${e.id}`}>
                    <img src={e.image} alt="" />
                         
                         <p>Brand Name:{e.name}</p>

@@ -887,6 +887,75 @@ width: 40%;
   margin: 20px auto;
 }
 
-/* Individual card style */
+/*Pte services*/
+
+.logohead{
+  display: flex;
+  align-items: center;
+ padding-left: 20%;
+  background-color: #294546;
+  color: whitesmoke;
+}
+.petmedicandata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.petmed1 {
+  border: 2px solid transparent; 
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  transition: border 0.5s ease-in-out;
+}
+
+.petmed1:hover {
+  border: 2px solid #ffcc00;}
+
+.petmed1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.add-to-cart1 {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart1:hover {
+  background-color: #218838; 
+}
+
+
+.petmed1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  animation: twinkle 1.5s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffcc00; 
+  }
+}
 
 
