@@ -9,7 +9,7 @@ function catfoodbrand() {
       <div className='dogfoodbrands'>
             {catfoodbrands.map((e) => (
                 <div className='foodbrand' key={e.id}>
-                    <Link to={`/foodbrands/${e.id}`}>
+                    <Link to={`/catfoodbrands/catfood/${e.id}`}>
                         <img className='image-animate1' src={e.image} alt={e.name} />
                         
                         <p className='foodname'>Name: {e.name}</p>

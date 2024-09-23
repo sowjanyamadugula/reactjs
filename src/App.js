@@ -14,7 +14,7 @@ import Catbreed from './pages/Catbreed.jsx';
 import Parrotbreed from './pages/Parrotbreed.jsx';
 import Catser from './pages/Catser.jsx';
 import Details from './pages/Details.jsx';
-
+import { CartProvider } from './Single/CartContext';
 
 function App() {
   return (
@@ -36,10 +36,17 @@ function App() {
        <Route path='/catser' element={<Catser/>}/>
           
         <Route path='/details' element={<Details/>}/>
-        <Route path='/breads/dogbre/id' element={<Details/>}/>
-        <Route path='/catbreeds/catbre/id' element={<Details/>}/>  
-        <Route path='/parrotbreeds/parrotbre/id' element={<Details/>}/>
+        <Route path="/breads/dog/:id" element={<Details />} />
+    <Route path="/catbreeds/cat/:id" element={<Details />} />
+    <Route path="/parrotbreeds/parrot/:id" element={<Details />} />
+    <Route path="/catfoods/catfood/:id" element={<Details />} />
+    <Route path="/parrotfoods/parrotfood/:id" element={<Details />} />
+    <Route path="/dogfoods/dogfood/:id" element={<Details />} />
+    <Route path="/medican/:id" element={<Details />} />
+    <Route path="/services/:id" element={<Details />} />
        
+         <Route path="/:type/:id" element={<Details />} />
+         
           
         </Routes>
       </BrowserRouter>

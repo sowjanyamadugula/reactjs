@@ -6,26 +6,19 @@ import '../App.css';
 
 function Catbreed() {
     return (
-    
-      <div className='bread1'>
-    
+     <div className='bread1'>
           {
               catbreeds.map((e)=>{
-                  return(
-                    
+                  return(                  
                       <div className='breed2'>
-  
-                      <Link to={`/catbreeds/catbre/${e.id}`}>
+    <Link to={`/catbreeds/cat/${e.id}`}>
                      <img src={e.image} alt="" />
-                          
-                          <p>Brand Name:{e.name}</p>
-                          <p>Price : {e.price}</p> </Link>
+                           <p>Brand Name:{e.name}</p>
+                          <p>Price : {e.price}</p> 
                           <button className="add-to-cart2">Add to Cart</button>
-                     
-                      </div>
-                      
-                  )
-                  
+                          </Link>
+                      </div>   
+                  )   
               })
           }
       </div>
