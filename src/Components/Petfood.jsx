@@ -10,7 +10,7 @@ import { catfoodbrands } from '../Data/Catfoods';
 import { parrotfoodbrand } from '../Data/Parratfood';
 import Nav from './Nav';
 import { Col, Row } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 function Petfood() {
   const FoodData = foodbrands.slice(0, 12);
   const FoodDatacat = catfoodbrands.slice(0, 12);
@@ -29,7 +29,8 @@ function Petfood() {
         <div className='rowicons'>
           <div className='col-md-2 itemicons'>
             <FontAwesomeIcon icon={faDog} className='i1' />
-            <p>Dog Food</p>
+            <Link to='#df'>
+            <p>Dog Food</p></Link>
           </div>
           <div className='col-md-2 itemicons'>
             <FontAwesomeIcon icon={faCat} />
@@ -73,8 +74,8 @@ function Petfood() {
           <span className="carousel-control-next-icon"></span>
         </button>
       </div>
-      <h2 className='food-heading'>Types of Dog Food</h2>
-      <div className='maindata1'>
+      <h2 className='food-heading' >Types of Dog Food</h2>
+      <div className='maindata1' id='df'>
         {FoodData.map((e) => (
           <div className='food-item1' key={e.id}>
             <img className='image-animate' src={e.image} alt={e.name} />
