@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faPaw, faShieldAlt, faCapsules,faTableColumns } from '@fortawesome/free-solid-svg-icons'; // Import icons
+import { faHome, faPaw, faShieldAlt, faCapsules,faTableColumns,faCartShopping } from '@fortawesome/free-solid-svg-icons'; 
 import Img from '../Assets/grouppets.jpg';
 import '../App.css';
 
@@ -36,6 +36,10 @@ function Nav() {
           <Link to='/petmedican'>
             <FontAwesomeIcon icon={faCapsules} /> Pets Medicans
           </Link>
+        </li>
+        <li className='l4'>
+          <Link to='/cart'>
+          <FontAwesomeIcon icon={faCartShopping} /> Add to Cart</Link>
         </li>
       </ul>
       <div className='logout'>

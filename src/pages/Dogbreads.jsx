@@ -4,6 +4,41 @@ import { Link } from 'react-router-dom';
 
 function Dogbreads() {
   return (
+    <>
+           <div className='containerpetservices'>
+        <div className='rowicons'>
+           
+        <div className='col-sm-2 itemicons'>
+        <Link to='/home'>
+           <p className='i3'>Home</p>
+           </Link></div>
+         
+          <div className='col-sm-2 itemicons'>
+          <Link to='/dashboard'>
+            <p className='i3'>Dashboard</p>
+            </Link>
+          </div>
+          
+        
+          <div className='col-sm-2 itemicons'>
+          <Link to='/petservices'>
+            <p className='i3'>Pets services</p></Link>
+        </div>
+          
+        
+          <div className='col-sm-2 itemicons'>
+          <Link to='/petfood'>
+            <p className='i3'>Pets Foods</p></Link>
+          </div>
+          
+          
+          <div className='col-sm-2 itemicons'>
+          <Link to='/petmedicans'>
+            <p className='i3'>Pets Medican</p> </Link> 
+          </div>
+         
+        </div>
+      </div>
   
     <div className='bread1'>
   
@@ -27,6 +62,7 @@ function Dogbreads() {
             })
         }
     </div>
+    </>
   )
 }
    

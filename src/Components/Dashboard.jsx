@@ -44,11 +44,12 @@ function Dashboard() {
             <div className="breed3">
               {dogData.map((dog) => (
                 <div className='breed' key={dog.id}>
+                   <Link to={`/details/dog/${dog.id}`}>
                   <img src={dog.image} alt={dog.name} />
                   <p>Brand Name: {dog.name}</p>
                   <p>Price: ${dog.price}</p>
-                  <Link to={`/details/dog/${dog.id}`}>
-                    <button className="add-to-cart2">View Details</button>
+                 
+                    <button className="add-to-cart2">add to cart</button>
                   </Link>
                 </div>
               ))}
@@ -64,11 +65,12 @@ function Dashboard() {
             <div className="breed3">
               {catData.map((cat) => (
                 <div className='breed' key={cat.id}>
+                   <Link to={`/details/cat/${cat.id}`}>
                   <img src={cat.image} alt={cat.name} />
                   <p>Brand Name: {cat.name}</p>
                   <p>Price: ${cat.price}</p>
-                  <Link to={`/details/cat/${cat.id}`}>
-                    <button className="add-to-cart2">View Details</button>
+                 
+                    <button className="add-to-cart2">add to cart</button>
                   </Link>
                 </div>
               ))}
@@ -77,18 +79,16 @@ function Dashboard() {
               </Link>
             </div>
           </div>
-
-       
           <div className='secdash'>
             <h2 className='catbreed1'>Types of Parrot Breeds</h2>
             <div className="breed3">
               {parrotData.map((parrot) => (
                 <div className='breed' key={parrot.id}>
+                  <Link to={`/details/parrot/${parrot.id}`}>
                   <img src={parrot.image} alt={parrot.name} />
                   <p>Brand Name: {parrot.name}</p>
                   <p>Price: ${parrot.price}</p>
-                  <Link to={`/details/parrot/${parrot.id}`}>
-                    <button className="add-to-cart2">View Details</button>
+                  <button className="add-to-cart2">add to cart</button>
                   </Link>
                 </div>
               ))}
