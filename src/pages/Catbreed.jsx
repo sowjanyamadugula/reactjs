@@ -36,7 +36,7 @@ function Catbreed() {
           
           
           <div className='col-sm-2 itemicons'>
-          <Link to='/petmedicans'>
+          <Link to='/petmedican'>
             <p className='i3'>Pets Medican</p> </Link> 
           </div>
          

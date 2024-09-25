@@ -1,10 +1,17 @@
-import React, { createContext, useState } from 'react';
+// src/Single/CartContext.jsx
+import React, { createContext, useState, useEffect } from 'react';
 
-// Create a Context for the cart
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-    const [cartItems, setCartItems] = useState([]);
+    const [cartItems, setCartItems] = useState(() => {
+        const savedCart = localStorage.getItem('cartItems');
+        return savedCart ? JSON.parse(savedCart) : [];
+    });
+
+    useEffect(() => {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }, [cartItems]);
 
     const addToCart = (item) => {
         setCartItems((prevItems) => {
@@ -46,8 +53,12 @@ export const CartProvider = ({ children }) => {
         return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
     };
 
+    const cartQuantity = () => {
+        return cartItems.reduce((total, item) => total + item.quantity, 0);
+    };
+
     return (
-        <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, increaseQuantity, decreaseQuantity, totalAmount }}>
+        <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, increaseQuantity, decreaseQuantity, totalAmount, cartQuantity }}>
             {children}
         </CartContext.Provider>
     );

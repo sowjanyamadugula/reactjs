@@ -2,6 +2,7 @@ import React from 'react';
 import { breads } from '../Data/Breads';
 import { Link } from 'react-router-dom';
 
+
 function Dogbreads() {
   return (
     <>
@@ -33,7 +34,7 @@ function Dogbreads() {
           
           
           <div className='col-sm-2 itemicons'>
-          <Link to='/petmedicans'>
+          <Link to='/petmedican'>
             <p className='i3'>Pets Medican</p> </Link> 
           </div>
          
