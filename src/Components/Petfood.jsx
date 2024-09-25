@@ -106,14 +106,18 @@ function Petfood() {
       <div className='maindata1'>
         {FoodDataparrot.map((e) => (
           <div className='food-item1' key={e.id}>
+          
             <img className='image-animate' src={e.image} alt={e.name} />
             <div className='img-id-name-price'>
              
               <p className='names'>Name: {e.name}</p>
               <p className='price'>Price: {e.price}</p>
-              <button className='add-to-cart-btn'>Add to Cart</button>
+              
+            <button className='add-to-cart-btn'>Add to Cart</button>
+              
             </div>
           </div>
+          
         ))}
       </div>
     </div>

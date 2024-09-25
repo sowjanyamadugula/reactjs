@@ -6,7 +6,7 @@ import { breads } from '../Data/Breads';
 import { catbreeds } from '../Data/Catbreedsdata';
 import { parrotbreeds } from '../Data/Parraotdata';
 import '../App.css'; 
-import { CartContext } from '../Single/CartContext';
+import Fish from '../Assets/fish.png'
 
 
 const Card = ({ title, icon, description }) => {
@@ -27,7 +27,7 @@ function Dashboard() {
   const dogData = breads.slice(0, 3); 
   const catData = catbreeds.slice(0, 3); 
   const parrotData = parrotbreeds.slice(0, 3);
-  const {cartQuantity}=useContext(CartContext);
+  
 
   return (
     <div className='container-fluid'>
@@ -38,11 +38,7 @@ function Dashboard() {
         <Col sm={10}>
           <div className="dash">
             <p className='hello'>Hello, welcome to pets home</p>
-            <div className="cart-icon">
-                    <Link to="/cart">
-                    🛒 <span className="cart-count">{cartQuantity()}</span>
-                    </Link>
-                </div>
+            
           </div>
 
          
@@ -136,7 +132,7 @@ function Dashboard() {
 
                
                 <div className="image-center">
-                  <img src='/path-to-fish-image/fish.png' alt="Pet Owner" className="center-image" />
+                  <img src={Fish} alt="Pet Owner" className="center-image" />
                 </div>
 
               
