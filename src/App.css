@@ -109,7 +109,17 @@
   box-shadow: rgb(57, 111, 113) 0px 2px 8px 0px;
   box-shadow: inset olive;
 }
-
+.cart-icon1{
+  display: flex;
+}
+.carticon2{
+  margin-top: 3%;
+  margin-left: 20%;
+}
+.number{
+  margin-top: 3%;
+margin-left:5px;
+}
 .hello {
   color: rgb(124, 116, 116);
   font-weight: bold;

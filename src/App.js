@@ -15,10 +15,9 @@ import Parrotbreed from './pages/Parrotbreed.jsx';
 import Catser from './pages/Catser.jsx';
 import Details from './pages/Details.jsx';
 import { CartProvider } from './Single/CartContext';
-import Cart from './Single/Card.jsx'
-import Order from './Single/Order.jsx'; 
 import Petmed from './pages/Petmed.jsx';
-
+import Cart  from './Single/Cart.jsx';
+import Order from './Single/Order.jsx';
 function App() {
   return (
     <CartProvider>
@@ -38,8 +37,8 @@ function App() {
           <Route path="/parrotbreeds" element={<Parrotbreed />} />
           <Route path="/catser" element={<Catser />} />
           <Route path="/details/:category/:id" element={<Details />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/order" element={<Order />} /> 
+          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/order" element={<Order/>}/>
         </Routes>
       </BrowserRouter>
     </CartProvider>

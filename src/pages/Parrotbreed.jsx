@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import { parrotbreeds } from '../Data/Parraotdata';
-import { CartContext } from '../Single/CartContext'; // Import the CartContext
+import { CartContext } from '../Single/CartContext'; 
 
 function Parrotbreed() {
-  const { addToCart } = useContext(CartContext); // Destructure addToCart from CartContext
+  const { addToCart } = useContext(CartContext);
 
   return (
     <>
@@ -52,9 +52,12 @@ function Parrotbreed() {
                 <p>Brand Name: {parrot.name}</p>
                 <p>Price: ${parrot.price}</p>
               </Link>
-              <button 
+              <button
                 className="add-to-cart2"
-                onClick={() => addToCart(parrot)} // Add this onClick to handle adding to cart
+                onClick={(e) => {
+                  e.preventDefault(); 
+                  addToCart(parrot); 
+                }}
               >
                 Add to Cart
               </button>

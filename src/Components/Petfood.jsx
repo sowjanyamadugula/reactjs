@@ -74,8 +74,9 @@ function Petfood() {
           <span className="carousel-control-next-icon"></span>
         </button>
       </div>
-      <h2 className='food-heading' >Types of Dog Food</h2>
-      <div className='maindata1' id='df'>
+      <section id='df'>
+      <h2 className='food-heading'  >Types of Dog Food</h2>
+      <div className='maindata1'>
         {FoodData.map((e) => (
           <div className='food-item1' key={e.id}>
             <img className='image-animate' src={e.image} alt={e.name} />
@@ -88,6 +89,7 @@ function Petfood() {
           </div>
         ))}
       </div>
+      </section>
       <h2 className='food-heading'>Types of Cat Food</h2>
       <div className='maindata1'>
         {FoodDatacat.map((e) => (

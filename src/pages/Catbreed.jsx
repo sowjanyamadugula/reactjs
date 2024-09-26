@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { catbreeds } from '../Data/Catbreedsdata';
 import '../App.css';
-import { CartContext } from '../Single/CartContext';  // Import CartContext
+import { CartContext } from '../Single/CartContext';  
 
 function Catbreed() {
-  const { addToCart } = useContext(CartContext);  // Get addToCart from CartContext
+  const { addToCart } = useContext(CartContext);
 
   return (
     <>
@@ -52,11 +52,11 @@ function Catbreed() {
               <p>Price : {cat.price}</p>
             </Link>
             <button
-              className="add-to-cart2"
-              onClick={() => addToCart(cat)}  // Call addToCart when button is clicked
-            >
-              Add to Cart
-            </button>
+                            className="add-to-cart2"
+                            onClick={() => addToCart(cat)} 
+                          >
+                            Add to Cart
+                          </button>
           </div>
         ))}
       </div>

@@ -13,43 +13,43 @@ import Pug from '../Assets/pug.png'
     id:1,
     name:"Goldretriver",
     image:Goldretriver,
-    price:"20000"
+    price:20000
 },
 {
     id:2,
     name:"German",
     image:German,
-     price:"20000"
+     price:20000
 },
 {
     id:3,
     name:"Hussky",
     image:Hussky,
-     price:"20000"
+     price:20000
 },
 {
     id:4,
     name:"Dabarman",
     image:Dabarman,
-     price:"20000"
+     price:20000
 },
 {
     id:5,
     name:"Labradoe",
     image:Labradoe,
-     price:"20000"
+     price:20000
 },
 {
     id:6,
     name:"Shihtzu",
     image:Shihtzu,
-     price:"20000"
+     price:20000
 },
 {
     id:7,
     name:"Rotwiller",
     image:Rotwiller,
-     price:"20000"
+     price:20000
 },
 {
     id:8,
@@ -74,12 +74,12 @@ import Pug from '../Assets/pug.png'
     id:11,
     name:"Rotwiller",
     image:Rotwiller,
-     price:"20000"
+     price:20000
 },
 {
     id:12,
     name:"Hussky",
     image:Hussky,
-     price:"20000"
+     price:20000
 },
 ]
