@@ -43,7 +43,7 @@ function Nav() {
         </li>
       </ul>
       <div className='logout'>
-        <Link to='/'>
+        <Link to='/reactjs'>
           Logout
         </Link>
       </div>
