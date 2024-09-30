@@ -243,16 +243,16 @@ body {
   margin-top: 40px;
   letter-spacing: 4px
 }
-
+/* 
 .login-box1 a:hover {
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #03e9f4,
-              /* 0 0 25px #03e9f4,
-              0 0 50px #03e9f4, */
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
               0 0 100px #03e9f4;
-}
+} */
 
 .login-box1 a span {
   position: absolute;
@@ -495,32 +495,32 @@ margin-left: 25%;
   border: 2px solid transparent;
   border-image: linear-gradient(45deg, pink, #ff00cc) 1;
   padding: 10px;
-  width: 22%; /* Further reduced size */
+  width: 22%;
   margin: 20px;
   text-align: center;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Clearer, larger box shadow */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
   transition: transform 0.3s ease-in-out;
-  background-color: #fff; /* Clean background color */
-  border-radius: 10px; /* Add slight rounding for a modern look */
+  background-color: #fff; 
+  border-radius: 10px; 
 }
 
 /* Hover effect with twinkle border for Dogbreads */
 .breed2:hover {
-  transform: scale(1.05); /* Slightly larger on hover */
+  transform: scale(1.05);
   animation: twinkle-border 1.5s infinite alternate;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25); /* Larger shadow on hover */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25); 
 }
 
 /* Flex layout for images */
 .breed2 img {
-  width: 100px; /* Adjust image size to fit smaller cards */
+  width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
 
 /* Text styling for Dogbreads */
 .breed2 p {
-  font-size: 14px; /* Slightly smaller text */
+  font-size: 14px; 
   color: #333;
   margin: 10px 0;
 }
@@ -538,10 +538,10 @@ margin-left: 25%;
   border: 2px solid transparent;
   border-image: linear-gradient(45deg, pink, #ff00cc) 1;
   padding: 10px;
-  width: 22%; /* Reduced size for Dashboard */
+  width: 22%; 
   margin: 20px;
   text-align: center;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Clearer, larger box shadow */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
   transition: transform 0.3s ease-in-out;
   background-color: #fff;
   border-radius: 10px;
@@ -549,14 +549,14 @@ margin-left: 25%;
 
 /* Hover effect for Dashboard cards */
 .breed:hover {
-  transform: scale(1.05); /* Slightly larger on hover */
+  transform: scale(1.05);
   animation: twinkle-border 1.5s infinite alternate;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25); /* Larger shadow on hover */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25); 
 }
 
 /* Flex layout for images in Dashboard */
 .breed img {
-  width: 200px; /* Adjust image size */
+  width: 200px; 
   height: auto;
   margin-bottom: 10px;
 }
@@ -978,10 +978,10 @@ margin-left: 1%;
   border: 2px solid transparent;
   border-image: linear-gradient(45deg, pink, #ff00cc) 1;
   padding: 20px;
-  width: 22%; /* Reduced size for Dashboard */
+  width: 22%; 
   margin: 20px;
   text-align: center;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Clearer, larger box shadow */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
   transition: transform 0.3s ease-in-out;
   background-color: #fff;
   border-radius: 10px;
@@ -989,7 +989,7 @@ margin-left: 1%;
 }
 .petservicesss:hover{
   
-    transform: scale(1.05); /* Slightly larger on hover */
+    transform: scale(1.05); 
     animation: twinkle-border 1.5s infinite alternate;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
 }
@@ -1018,7 +1018,7 @@ margin-left: 1%;
 }
 
 .itemicons {
-  border: 1px solid #a41476; 
+  border: 4px solid #ffcc00; 
   border-radius: 8px; 
   padding: 10px;
   text-align: center; 
@@ -1154,6 +1154,7 @@ margin-top: 3%;
 
 .food-item1:hover, .foodbrand:hover {
   transform: translateY(-10px);
+  
 }
 
 .image-animate, .image-animate1 {
@@ -1334,8 +1335,8 @@ width: 40%;
 .order-container {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center; 
+  justify-content: center; 
   min-height: 100vh;
   padding: 20px;
   text-align: center;

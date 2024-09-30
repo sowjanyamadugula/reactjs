@@ -12,12 +12,12 @@ import { Col, Row } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 
 function Petfood() {
-  // Create refs for the food sections
+
   const dogFoodRef = useRef(null);
   const catFoodRef = useRef(null);
   const parrotFoodRef = useRef(null);
 
-  // Scroll function
+ 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -86,7 +86,7 @@ function Petfood() {
               </button>
             </div>
 
-            {/* Dog Food Section */}
+          
             <section id='df' ref={dogFoodRef}>
               <h2 className='food-heading'>Types of Dog Food</h2>
               <div className='maindata1'>
@@ -103,7 +103,7 @@ function Petfood() {
               </div>
             </section>
 
-            {/* Cat Food Section */}
+            
             <section ref={catFoodRef}>
               <h2 className='food-heading'>Types of Cat Food</h2>
               <div className='maindata1'>
@@ -120,7 +120,7 @@ function Petfood() {
               </div>
             </section>
 
-            {/* Parrot Food Section */}
+       
             <section ref={parrotFoodRef}>
               <h2 className='food-heading'>Types of Parrot Food</h2>
               <div className='maindata1'>
