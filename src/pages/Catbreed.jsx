@@ -18,8 +18,8 @@ function Catbreed() {
           </div>
 
           <div className='col-sm-2 itemicons'>
-            <Link to='/dashboard'>
-              <p className='i3'>Dashboard</p>
+            <Link to='/cart'>
+              <p className='i3'>Add to Cart</p>
             </Link>
           </div>
 

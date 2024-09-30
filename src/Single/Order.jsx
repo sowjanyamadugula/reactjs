@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 function Order() {
   const location = useLocation();
@@ -41,6 +42,36 @@ function Order() {
   };
 
   return (
+    <>
+            <div className='containerpetservices'>
+                <div className='rowicons'>
+                    <div className='col-sm-2 itemicons'>
+                        <Link to='/home'>
+                            <p className='i3'>Home</p>
+                        </Link>
+                    </div>
+                    <div className='col-sm-2 itemicons'>
+                        <Link to='/dashboard'>
+                            <p className='i3'>Dashboard</p>
+                        </Link>
+                    </div>
+                    <div className='col-sm-2 itemicons'>
+                        <Link to='/petservices'>
+                            <p className='i3'>Pets Services</p>
+                        </Link>
+                    </div>
+                    <div className='col-sm-2 itemicons'>
+                        <Link to='/petfood'>
+                            <p className='i3'>Pets Foods</p>
+                        </Link>
+                    </div>
+                    <div className='col-sm-2 itemicons'>
+                        <Link to='/petmedican'>
+                            <p className='i3'>Pets Medican</p>
+                        </Link>
+                    </div>
+                </div>
+            </div>
     <div className="order-container">
       <h2>Your Order</h2>
       {cartItems.length === 0 ? (
@@ -75,15 +106,17 @@ function Order() {
         value={userDetails.phone}
         onChange={handleInputChange}
       />
-      <button onClick={handleOrderSubmit}>Place Order</button>
-
+      <div  className="checkout-button">
+      <button onClick={handleOrderSubmit} >Place Order</button>
+      </div>
       {orderPlaced && (
         <div className="order-confirmation">
-          <h3>Order Placed!</h3>
+          <h3 className="checkout-button">Order Placed!</h3>
           <p>Thank you, {userDetails.name}. Your order has been placed successfully.</p>
         </div>
       )}
     </div>
+    </>
   );
 }
 

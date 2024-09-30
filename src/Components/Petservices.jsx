@@ -94,7 +94,7 @@ function Dogservices()
       </div>
       </section>
       <section>
-      <h2 className='petserhead'>Types of Services</h2>
+      <h2 className='petserhead'>Types of Cat Services</h2>
        
        <div className="petservicesss3">
          {Petsdata.map((e) => (
@@ -110,7 +110,7 @@ function Dogservices()
          ))}
           
        </div>
-       <h2 className='petserhead'>Types of Services</h2>
+       <h2 className='petserhead'>Types of Cat Services</h2>
        
        <div className="petservicesss3">
          {Petsdata1.map((e) => (

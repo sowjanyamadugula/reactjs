@@ -26,8 +26,8 @@ const Card = ({ title, icon, description }) => {
 };
 
 function Dashboard() {
-  const { addToCart, cartItems } = useContext(CartContext); // Destructure addToCart and cartItems from CartContext
-  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0); // Calculate total items in cart
+  const { addToCart, cartItems } = useContext(CartContext); 
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0); 
 
   const dogData = breads.slice(0, 3); 
   const catData = catbreeds.slice(0, 3); 
@@ -63,7 +63,7 @@ function Dashboard() {
                     </Link>
                     <button
                       className="add-to-cart2"
-                      onClick={() => addToCart(dog)} // Add dog to cart on button click
+                      onClick={() => addToCart(dog)} 
                     >
                       Add to Cart
                     </button>
@@ -88,7 +88,7 @@ function Dashboard() {
                     </Link>
                     <button
                       className="add-to-cart2"
-                      onClick={() => addToCart(cat)} // Add cat to cart on button click
+                      onClick={() => addToCart(cat)} 
                     >
                       Add to Cart
                     </button>
@@ -113,7 +113,7 @@ function Dashboard() {
                     </Link>
                     <button
                       className="add-to-cart2"
-                      onClick={() => addToCart(parrot)} // Add parrot to cart on button click
+                      onClick={() => addToCart(parrot)} 
                     >
                       Add to Cart
                     </button>

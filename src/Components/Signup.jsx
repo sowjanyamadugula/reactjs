@@ -1,84 +1,74 @@
 import React, { useState } from 'react';
-import '../App.css';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
+function SignUp() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    number: '',
+    password: '',
+    confirmPassword: '',
+  });
 
-function Signup() {
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { password, confirmPassword } = formData;
+
     if (password !== confirmPassword) {
-      alert('Passwords do not match');
+      alert("Passwords do not match!");
     } else {
-      alert('Form submitted successfully!');
+      // Proceed with form submission (e.g., API call)
+      alert("Form submitted successfully!");
     }
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100">
-      <form className="row g-3 needs-validation form-container" onSubmit={handleSubmit} noValidate>
-        <div className="col-md-6">
-          <label htmlFor="validationCustom01" className="form-label">First name</label>
-          <input type="text" className="form-control" id="validationCustom01" required />
-          <div className="valid-feedback">
-            Looks good!
+    <div className="d-flex justify-content-center align-items-center vh-100">
+      <div className="login-box1">
+        <h2>Sign Up</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="user-box">
+            <input type="text" name="firstName" required="" onChange={handleChange} />
+            <label>First Name</label>
           </div>
-        </div>
-        <div className="col-md-6">
-          <label htmlFor="validationCustom02" className="form-label">Last name</label>
-          <input type="text" className="form-control" id="validationCustom02" required />
-          <div className="valid-feedback">
-            Looks good!
+          <div className="user-box">
+            <input type="text" name="lastName" required="" onChange={handleChange} />
+            <label>Last Name</label>
           </div>
-        </div>
-        <div className="col-md-12">
-          <label htmlFor="validationCustomUsername" className="form-label">Email</label>
-          <div className="input-group has-validation">
-            <span className="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="email" className="form-control" id="validationCustomUsername" required />
-            <div className="invalid-feedback">
-              Please choose a valid email.
-            </div>
+          <div className="user-box">
+            <input type="email" name="email" required="" onChange={handleChange} />
+            <label>Email</label>
           </div>
-        </div>
-        <div className="col-md-6">
-          <label htmlFor="validationCustomPassword" className="form-label">Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="validationCustomPassword"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <div className="invalid-feedback">
-            Please provide a valid password.
+          <div className="user-box">
+            <input type="number" name="number" required="" onChange={handleChange} />
+            <label>Number</label>
           </div>
-        </div>
-        <div className="col-md-6">
-          <label htmlFor="validationCustomConfirmPassword" className="form-label">Confirm Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="validationCustomConfirmPassword"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-          />
-          <div className="invalid-feedback">
-            Please confirm your password.
+          <div className="user-box">
+            <input type="password" name="password" required="" onChange={handleChange} />
+            <label>Password</label>
           </div>
-        </div>
-        <div className="col-12">
-            <Link to='/'>
-           
-          <button className="btn btn-primary  button" type="submit">Sign Up</button> </Link>
-        </div>
-      </form>
+          <div className="user-box">
+            <input type="password" name="confirmPassword" required="" onChange={handleChange} />
+            <label>Confirm Password</label>
+          </div>
+
+          
+          
+
+          <Link to="/">
+            <button type="button" className="btn btn-primary">Sing Up</button>
+          </Link>
+        </form>
+      </div>
     </div>
   );
 }
 
-export default Signup;
+export default SignUp;

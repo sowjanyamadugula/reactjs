@@ -6,27 +6,337 @@
 .me-2 {
   margin-right: 10px;
 }
-/* sign up styles*/
-.container {
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f8f9fa;
+/* Gradient Background for Full Page */
+/* Set the background with a gradient */
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#4f5f7b, #243b55);
 }
 
-.form-container {
-  background-color: #fff; 
-  padding: 30px; 
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(97, 81, 81, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(52, 49, 49, 0.6);
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-  width: 100%;
-  max-width: 600px; 
 }
 
-.form-control {
-  margin-bottom: 10px;
+
+.dont{
+  color: whitesmoke;
 }
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -10px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 10px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #9bb8ba;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              /* 0 0 25px #03e9f4,
+              0 0 50px #03e9f4, */
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+ }
+ /*signup*/
+ .login-box1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(97, 81, 81, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+ .login-box1 h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box1 .user-box {
+  position: relative;
+}
+
+.login-box1 .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box1 .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box1 .user-box input:focus ~ label,
+.login-box1 .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box1 form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box1 a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              /* 0 0 25px #03e9f4,
+              0 0 50px #03e9f4, */
+              0 0 100px #03e9f4;
+}
+
+.login-box1 a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box1 a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box1 a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box1 a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box1 a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+ }
+
+/* Style for the checkbox and label */
+
+
 
 .button {
   width: 100%; 
@@ -115,21 +425,21 @@
 .carticon2{
   margin-top: 3%;
   margin-left: 20%;
+  color: whitesmoke;
 }
 .number{
   margin-top: 3%;
 margin-left:5px;
+color: whitesmoke;
 }
 .hello {
   color: rgb(124, 116, 116);
   font-weight: bold;
   font-size: 40px; 
   font-family: Cursive;
-  padding: 5px;
-
-  margin-left: 25%;
-  
-}
+  /* padding: 5px; */
+margin-left: 25%;
+  }
 
 .typesofpets{
   font-size:30px;
@@ -329,6 +639,7 @@ margin-left:5px;
   padding: 10px;
   background-color:white;
   gap: 5px;
+  color: whitesmoke;
 }
 .sidedog{
   margin-top: 5%;
@@ -479,7 +790,7 @@ margin-left: 1%;
   margin-left: 40%;
   margin-top: 10%;
   font-family: rumraisin;
-  color: #333;
+  color: whitesmoke;
   
 }
 .grid-container three{
@@ -650,6 +961,7 @@ margin-left: 1%;
   margin-left: 40%;
   margin-top: 3%;
   margin-bottom: 3%;
+  color: whitesmoke;
 }
 .petservicesss3{
   display: flex;
@@ -685,7 +997,7 @@ margin-left: 1%;
 /*petservices*/
 .headerpet {
   text-align: center;
-  color: #1f7477;
+  color:white;
   margin-bottom: 20px;
   
   margin-top: 3%;
@@ -706,7 +1018,7 @@ margin-left: 1%;
 }
 
 .itemicons {
-  border: 1px solid #a8dadc; 
+  border: 1px solid #a41476; 
   border-radius: 8px; 
   padding: 10px;
   text-align: center; 
@@ -716,6 +1028,7 @@ margin-left: 1%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.2s; 
   margin-left: 2%;
+  color: whitesmoke;
   
 }
 
@@ -724,7 +1037,7 @@ margin-left: 1%;
 }
 .dogservies{
   font-size: 2rem;
-  color: #1f7477;
+  color: #d3e0e1;
   text-align: center;
   margin-top: 3%;
 }
@@ -741,6 +1054,7 @@ margin-left: 1%;
   font-family: cursive;
   font-size: larger;
   margin-left: 15%;
+  color: whitesmoke;
 }
 .headdogserv{
 margin-left: 40%;
@@ -814,8 +1128,8 @@ margin-top: 3%;
 }
 .foodbrand {
   display: flex;
-  flex-direction: column; /* Ensures items stack vertically */
-  align-items: center;    /* Aligns content in the center (optional) */
+  flex-direction: column; 
+  align-items: center;   
 }
 
 
@@ -835,6 +1149,7 @@ margin-top: 3%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease-in-out;
+  color: whitesmoke;
 }
 
 .food-item1:hover, .foodbrand:hover {
@@ -852,12 +1167,14 @@ margin-top: 3%;
   font-size: 1.2rem;
   font-weight: bold;
   margin: 5px 0;
+  color: whitesmoke;
 }
 
 .price {
   font-size: 1rem;
   color: #555;
   margin-bottom: 10px;
+  color: whitesmoke;
 }
 
 .add-to-cart-btn {
@@ -922,6 +1239,7 @@ width: 40%;
   position: relative;
   overflow: hidden;
   transition: border 0.5s ease-in-out;
+  color: whitesmoke;
 }
 
 .petmed1:hover {
@@ -1000,13 +1318,166 @@ width: 40%;
 .i3{
   font-size: larger;
   color: #333;
- 
+  font-weight: 24px;
+  color: whitesmoke;
   text-decoration-line: none;
+  text-decoration: none;
 }
 .item-image{
   height: 220px;
   width: 80%;
   margin-top: 5%;
 }
+/*cart and order */
+/* General container for the cart and order */
+.cart-container12,
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  animation: twinkleBackground 3s infinite; /* Twinkling background */
+}
 
+@keyframes twinkleBackground {
+  0%, 100% {
+    background-color: #f9f9f9;
+  }
+  50% {
+    background-color: #f0f8ff; /* Light twinkle effect color */
+  }
+}
+
+/* Cart and order items */
+.cart-item11,
+.order-summary,
+.order-form {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: twinkleBorder 3s infinite; 
+  border: 1px solid transparent; 
+  background-color: #8d959d; 
+  
+}
+
+@keyframes twinkleBorder {
+  0%, 100% {
+    border-color: #ddd;
+  }
+  50% {
+    border-color: #ff69b4;
+  }
+}
+
+.img111 {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-summary,
+.order-confirmation {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  animation: twinkleBorder 3s infinite;
+  background-color: #e7f3e7;
+}
+
+
+.checkout-button button,
+.order-form button,
+.cart-item11 button {
+  padding: 10px 20px;
+  background-image: linear-gradient(45deg, #ff69b4, #ff4500); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: twinkleButton 2s infinite;
+}
+
+@keyframes twinkleButton {
+  0%, 100% {
+    background-image: linear-gradient(45deg, #ff69b4, #ff4500);
+  }
+  50% {
+    background-image: linear-gradient(45deg, #ff1493, #ff6347); 
+  }
+}
+
+.checkout-button button:hover,
+.order-form button:hover,
+.cart-item button:hover {
+  background-image: linear-gradient(45deg, #ff4500, #ff69b4);
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5); 
+}
+
+
+.cart-item11 button {
+  background-image: linear-gradient(45deg, #ff4500, #ff6347); 
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+.order-confirmation {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e7f3e7;
+  border: 1px solid #d4e7d4;
+  border-radius: 10px;
+  animation: twinkleBorder 3s infinite;
+}
+
+.order-confirmation h3 {
+  color: #28a745;
+}
+
+.order-confirmation p {
+  margin-top: 10px;
+  
+}
+.order-confirmation h3{
+  background-image: linear-gradient(45deg, #ff69b4, #ff4500); 
+}
+
+@media (max-width: 768px) {
+  .cart-item11,
+  .order-summary,
+  .order-form {
+    width: 90%;
+  }
+}
+
+.cart-item11 button {
+  background-image: linear-gradient(45deg, #ff4500, #ff6347); 
+}
+.order-form button {
+  background-image: linear-gradient(45deg, #ff69b4, #ff4500); 
+}
 
